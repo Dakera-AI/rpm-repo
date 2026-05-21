@@ -1,0 +1,5 @@
+[dakera]
+name=Dakera AI
+baseurl=https://dakera-ai.github.io/rpm-repo/
+enabled=1
+gpgcheck=0
