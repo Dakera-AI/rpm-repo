@@ -24,9 +24,9 @@ Only the `dk` CLI is packaged here. The Dakera server is not: it ships as the co
 
 | `dk` version | Dakera server |
 |--------------|---------------|
-| 0.7.x (latest in this repository) | v0.11.108 |
-| 0.8.0 and later | v0.11.108 and v0.12.0, with the v0.12 commands (`dk capabilities`, `dk attachment`, ...), see [dakera-cli#152](https://github.com/dakera-ai/dakera-cli/pull/152) |
+| 0.8.0 (latest in this repository) | v0.12.0 and v0.11.108; the v0.12 commands (`dk capabilities`, `dk attachment`, `--lang`, ...) need v0.12.0, see the [dk 0.8.0 release](https://github.com/dakera-ai/dakera-cli/releases/tag/v0.8.0) |
+| 0.7.x | v0.11.108 |
 
 ## Updates
 
-Packages are published automatically by the `Publish Linux Packages` workflow of [dakera-cli](https://github.com/dakera-ai/dakera-cli) when a release tag is pushed: it builds the package, adds it to this repository, regenerates and signs the repository metadata and commits. Nothing here is edited by hand, so `dk` 0.8.0 appears in this repository after the dakera-cli release, not before.
+Packages are published automatically by the `Publish Linux Packages` workflow of [dakera-cli](https://github.com/dakera-ai/dakera-cli) when a release tag is pushed: it builds the package, adds it to this repository, regenerates and signs the repository metadata and commits. Nothing here is edited by hand. The repository metadata is signed (`repodata/repomd.xml.asc`, the same key as the [APT repository](https://dakera-ai.github.io/apt-repo/KEY.gpg)); the packages themselves are not, which is why `dakera.repo` sets `gpgcheck=0`.
