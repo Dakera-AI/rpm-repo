@@ -2,4 +2,6 @@
 name=Dakera AI
 baseurl=https://dakera-ai.github.io/rpm-repo/
 enabled=1
-gpgcheck=0
+gpgcheck=1
+repo_gpgcheck=1
+gpgkey=https://dakera-ai.github.io/rpm-repo/RPM-GPG-KEY-dakera
